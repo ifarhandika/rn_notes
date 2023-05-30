@@ -1,13 +1,17 @@
-import { View, Text } from "react-native"
-import React from "react"
-import { Link } from "expo-router"
+import { SafeAreaView } from "react-native"
+import RegisterPage from "../../components/Pages/auth/RegisterPage"
 
 const Register = () => {
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Register</Text>
-      <Link href="/">Go Back</Link>
-    </View>
+    <SafeAreaView
+      style={{
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <RegisterPage />
+    </SafeAreaView>
   )
 }
 

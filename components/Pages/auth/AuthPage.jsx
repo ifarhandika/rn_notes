@@ -1,10 +1,10 @@
-import { View, Text, SafeAreaView, Image } from "react-native"
+import { SafeAreaView, Image } from "react-native"
 
-import Logo from "../../assets/gote-logo.png"
+import Logo from "../../../assets/gote-logo.png"
 
 import styles from "./styles"
 import { useRouter } from "expo-router"
-import CustomBtn from "../common/button/CustomBtn"
+import CustomBtn from "../../common/button/CustomBtn"
 
 const AuthPage = () => {
   const router = useRouter()

@@ -1,6 +1,6 @@
-import { View, Text, SafeAreaView } from "react-native"
+import { SafeAreaView } from "react-native"
 import { Stack, useRouter } from "expo-router"
-import AuthPage from "../components/Pages/AuthPage"
+import AuthPage from "../components/Pages/auth/AuthPage"
 
 const Home = () => {
   const router = useRouter()
