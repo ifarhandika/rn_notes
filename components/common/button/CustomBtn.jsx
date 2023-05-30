@@ -3,9 +3,13 @@ import React from "react"
 
 import styles from "./CustomBtn.style"
 
-const CustomBtn = ({ text, onPress }) => {
+const CustomBtn = ({ text, onPress, disabled }) => {
   return (
-    <TouchableOpacity style={styles.container} onPress={onPress}>
+    <TouchableOpacity
+      style={disabled === true ? styles.disabledContainer : styles.container}
+      onPress={onPress}
+      disabled={disabled}
+    >
       <Text style={styles.text}>{text}</Text>
     </TouchableOpacity>
   )

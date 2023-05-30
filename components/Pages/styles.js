@@ -8,10 +8,17 @@ const styles = StyleSheet.create({
   text: {
     textAlign: "center",
   },
+  textDesign: {
+    color: "#50A060",
+  },
   logo: {
     width: "70%",
     height: 100,
   },
+  errMsg: {
+    textAlign: "left",
+    color: "red"
+  }
 })
 
 export default styles

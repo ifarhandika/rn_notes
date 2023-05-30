@@ -13,7 +13,6 @@ const Login = () => {
         alignItems: "center",
       }}>
       <LoginPage />
-      <Link href="/">Go Back</Link>
     </SafeAreaView>
   )
 }

@@ -12,7 +12,8 @@ const Home = () => {
         backgroundColor: "white",
         justifyContent: "center",
         alignItems: "center",
-      }}>
+      }}
+    >
       <AuthPage />
       <Stack.Screen
         options={{
