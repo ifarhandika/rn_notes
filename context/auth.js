@@ -17,7 +17,7 @@ const authenticatedUser = (user) => {
     if (!user && !inAuthGroup) {
       router.replace("/")
     } else if (user && inAuthGroup) {
-      router.replace("/dashboard")
+      router.replace("/home")
     }
   }, [user, segments])
 }
