@@ -1,12 +1,18 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text, TouchableOpacity } from "react-native"
+import React from "react"
+import { useAuth } from "../../context/auth"
 
-const _profile = () => {
+const Profile = () => {
+  const { signOut } = useAuth()
+
   return (
     <View>
-      <Text>_profile</Text>
+      <Text>Profile</Text>
+      <TouchableOpacity onPress={() => signOut()}>
+        <Text>Sign Out</Text>
+      </TouchableOpacity>
     </View>
   )
 }
 
-export default _profile
+export default Profile

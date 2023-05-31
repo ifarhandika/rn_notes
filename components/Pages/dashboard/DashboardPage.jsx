@@ -8,9 +8,6 @@ const DashboardPage = () => {
   return (
     <View>
       <Text>DashboardPage</Text>
-      <TouchableOpacity onPress={() => signOut()}>
-        <Text>Sign Out</Text>
-      </TouchableOpacity>
     </View>
   )
 }

@@ -1,14 +1,20 @@
-import { View, Text } from "react-native"
+import { View, Text, SafeAreaView } from "react-native"
 import React from "react"
 import DashboardPage from "../../components/Pages/dashboard/DashboardPage"
 
-const _home = () => {
+const Home = () => {
   return (
-    <View>
-      <Text>_home</Text>
+    <SafeAreaView
+      style={{
+        flex: 1,
+        backgroundColor: "white",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
       <DashboardPage />
-    </View>
+    </SafeAreaView>
   )
 }
 
-export default _home
+export default Home
