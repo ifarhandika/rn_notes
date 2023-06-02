@@ -1,14 +1,35 @@
-import { View, Text, TouchableOpacity } from "react-native"
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  ScrollView,
+  FlatList,
+} from "react-native"
 import React from "react"
 import { useAuth } from "../../../context/auth"
 import NotesPage from "../notes/NotesPage"
+import CustomCards from "../../common/cards/CustomCards"
+import { noteList } from "../notes/noteList"
 
 const DashboardPage = () => {
-  const { signOut } = useAuth()
   return (
-    <View>
-      <Text>DashboardPage</Text>
-    </View>
+    <ScrollView showsVerticalScrollIndicator={false}>
+      {noteList.map((note) => {
+        let noteID = note.id
+        let noteCategory = note.category
+        let noteMessage = note.message
+
+        return (
+          <View key={noteID}>
+            <CustomCards
+              id={noteID}
+              category={noteCategory}
+              message={noteMessage}
+            />
+          </View>
+        )
+      })}
+    </ScrollView>
   )
 }
 

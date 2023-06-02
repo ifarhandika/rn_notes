@@ -4,14 +4,7 @@ import DashboardPage from "../../components/Pages/dashboard/DashboardPage"
 
 const Home = () => {
   return (
-    <SafeAreaView
-      style={{
-        flex: 1,
-        backgroundColor: "white",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
+    <SafeAreaView style={{ backgroundColor: "white", alignItems: "center" }}>
       <DashboardPage />
     </SafeAreaView>
   )

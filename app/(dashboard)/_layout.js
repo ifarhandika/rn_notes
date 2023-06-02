@@ -11,7 +11,7 @@ export default function DashboardLayout() {
     <>
       <Tabs
         screenOptions={{
-          headerStyle: { backgroundColor: COLORS.primary },
+          // headerStyle: { backgroundColor: COLORS.primary },
           headerShadowVisible: false,
           headerBackVisible: false,
         }}
